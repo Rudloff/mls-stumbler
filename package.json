@@ -1,0 +1,44 @@
+{
+    "name": "mls-stumbler",
+    "title": "MLS Stumbler",
+    "id": "stumbler@rudloff.pro",
+    "description": "Stumbler for Mozilla Location Service (https://location.services.mozilla.com/)",
+    "author": "Pierre Rudloff <contact@rudloff.pro>",
+    "license": "MPL 2.0",
+    "version": "0.1",
+    "permissions": {
+        "cross-domain-content": ["https://location.services.mozilla.com"]
+    },
+    "icon": "data/icon-60.png",
+    "preferences": [{
+        "name": "enableStumbling",
+        "title": "Enable stumbling",
+        "type": "bool",
+        "value": true
+    },
+    {
+        "name": "nickname",
+        "title": "Nickname",
+        "type": "string",
+        "value": ""
+    },
+    {
+        "name": "reportsSent",
+        "title": "Number of reports sent",
+        "type": "integer",
+        "value": 0,
+        "hidden": true
+    },
+    {
+        "type": "control",
+        "label": "Show stats",
+        "name": "showStats",
+        "title": "Show stats"
+    },
+    {
+        "type": "control",
+        "label": "Reset stats",
+        "name": "resetStats",
+        "title": "Reset stats"
+    }]
+}
